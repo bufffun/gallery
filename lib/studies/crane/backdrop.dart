@@ -5,6 +5,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_gen/gen_l10n/gallery_localizations.dart';
+// ignore: import_of_legacy_library_into_null_safe
 import 'package:flutter_staggered_grid_view/flutter_staggered_grid_view.dart';
 import 'package:gallery/data/gallery_options.dart';
 import 'package:gallery/layout/adaptive.dart';

@@ -5,12 +5,14 @@
 import 'dart:async';
 import 'dart:math' as math;
 
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 import 'package:flutter_gen/gen_l10n/gallery_localizations.dart';
 import 'package:gallery/constants.dart';
 import 'package:gallery/data/demos.dart';
 import 'package:gallery/data/gallery_options.dart';
+import 'package:gallery/demos/cupertino/cupertino_activity_indicator_demo.dart';
 import 'package:gallery/layout/adaptive.dart';
 import 'package:gallery/layout/image_placeholder.dart';
 import 'package:gallery/pages/category_list_item.dart';
@@ -530,6 +532,8 @@ class _DesktopCategoryItem extends StatelessWidget {
                 thickness: 2,
                 color: colorScheme.background,
               ),
+              // if (category == GalleryDemoCategory.cupertino)
+              const CupertinoActivityIndicator(),
               Flexible(
                 child: ListView.builder(
                   // Makes integration tests possible.
