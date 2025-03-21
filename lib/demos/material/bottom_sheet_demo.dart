@@ -157,22 +157,22 @@ class _PersistentBottomSheetDemoState
       _showBottomSheetCallback = null;
     });
 
-    Scaffold.of(context)
-        .showBottomSheet<void>(
-          (context) {
-            return _BottomSheetContent();
-          },
-          elevation: 25,
-        )
-        .closed
-        .whenComplete(() {
-          if (mounted) {
-            setState(() {
-              // Re-enable the bottom sheet button.
-              _showBottomSheetCallback = _showPersistentBottomSheet;
-            });
-          }
-        });
+    // Scaffold.of(context).showBottomSheet(builder)
+    //     .showBottomSheet<void>(
+    //       (context) {
+    //         return _BottomSheetContent();
+    //       },
+    //       elevation: 25,
+    //     )
+    //     .closed
+    //     .whenComplete(() {
+    //       if (mounted) {
+    //         setState(() {
+    //           // Re-enable the bottom sheet button.
+    //           _showBottomSheetCallback = _showPersistentBottomSheet;
+    //         });
+    //       }
+    //     });
   }
 
   @override
